@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lave seu carro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Agende online e aproveite a praticidade de um lava jato rápido, eficiente e sem complicações.</h3>
+      </div>
+
+      <div class="form-container">
+
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+
+        <div class="form-body">
+          <h1 class="form-title">Agendamento Lavagem Simples</h1>
+          <p>
+            Descreva pontos importantes a ser dado atenção na lavagem
+          </p>
+
+          <form>
+            <div class="box-input">
+              <label for="title">Tipo de lavagem<span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Simples, atenção em algum item?"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="color">Cor do carro <span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="color"
+                id="color"
+                class="block"
+                placeholder="Preto, Branco, Vermelho"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="description">Descrição <span class="required-field">*</span></label>
+              <textarea 
+              name="description" 
+              id="description" 
+              class="block" 
+              placeholder="pontos de atenção na lataria ou manchas."
+              required></textarea>
+            </div>            
+
+            <div class="box-input">
+              <label for="brand">Marca<span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="brand"
+                id="brand"
+                class="block"
+                placeholder="Digite a marca do veículo"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="model">Modelo<span class="required-field">*</span></label>
+              <input
+                type="text"
+                name="model"
+                id="model"
+                class="block"
+                placeholder="Digite o modelo do veículo"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <label for="mileage">Kilometragem<span class="required-field">*</span></label>
+              <input
+                type="number"
+                name="mileage"
+                id="mileage"
+                class="block"
+                placeholder="Digite a kilometragem do veículo"
+                required
+              />
+            </div>
+
+            <div class="box-input">
+              <p>Tipo de câmbio: <span class="required-field">*</span></p>
+              <input type="radio" id="manual" name="gear" value="manual"/>
+              <label for="manual">Manual</label>
+              <input type="radio" id="auto" name="gear" value="auto"/>
+              <label for="auto">Automático</label>
+            </div>
+
+            <div class="opcional-box">
+              <p>Área de foco:</p>
+              <ul class="opcional-list">
+                <li>
+                  <input type="checkbox" 
+                  id="interior_cleaning" 
+                  name="opcional[]" 
+                  value="interior_cleaning">
+                  <label for="interior_cleaning">Interior do veículo</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="exterior_cleaning" 
+                  name="opcional[]" 
+                  value="exterior_cleaning">
+                  <label for="exterior_cleaning">Exterior do veículo</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="both_cleaning" 
+                  name="opcional[]" 
+                  value="both_cleaning">
+                  <label for="both_cleaning">Ambos</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="mat_cleaning" 
+                  name="opcional[]" 
+                  value="mat_cleaning">
+                  <label for="mat_cleaning">Limpeza de tapetes</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="opcional-box">
+                <p>Observação de uso:</p>
+              <ul class="opcional-list">
+                <li>
+                  <input type="checkbox" 
+                  id="dust" 
+                  name="opcional[]" 
+                  value="dust">
+                  <label for="dust">Poeira leve</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="rain_residue" 
+                  name="opcional[]" 
+                  value="rain_residue">
+                  <label for="rain_residue">Resíduos de chuva</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="mud_marks" 
+                  name="opcional[]" 
+                  value="mud_marks">
+                  <label for="mud_marks">Marcas de lama</label>
+                </li>
+
+                <li>
+                  <input type="checkbox" 
+                  id="leather_seat" 
+                  name="opcional[]" 
+                  value="leather_seat">
+                  <label for="leather_seat">Banco de couro</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="box-input">
+              <p>Fotos do Carro: <span class="required-field">*</span></p>
+              <input 
+              type="file" 
+              multiple accept="image/png, image/jpg" 
+              id="images" 
+              name="images" 
+              required>
+            </div>
+
+            <input type="submit" name="enviar" class="btn-submit"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
