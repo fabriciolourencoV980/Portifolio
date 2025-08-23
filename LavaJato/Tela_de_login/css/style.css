@@ -54,3 +54,40 @@ body {
 .container input[type="button"]:hover {
   background-color: #0056b3;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container input[type="text"],
+  .container input[type="password"],
+  .container input[type="button"] {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .container input[type="text"],
+  .container input[type="password"],
+  .container input[type="button"] {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
